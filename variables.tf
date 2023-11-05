@@ -13,10 +13,6 @@ variable "region" {
   description = "AWS region"
 }
 
-variable "cluster_name" {
-  type = string
-}
-
 variable "db_host" {
   type = string
 }
