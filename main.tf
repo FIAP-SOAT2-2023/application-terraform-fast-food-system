@@ -3,7 +3,7 @@
 
 provider "aws" {
   region = var.region
-  alias  = "us-east-1"
+  alias  = "us_east_1"
 }
 
 # Filter out local zones, which are not currently supported 
