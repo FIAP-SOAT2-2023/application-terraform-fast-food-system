@@ -3,6 +3,7 @@
 
 provider "aws" {
   region = var.region
+  alias  = "bridge"
 }
 
 # Filter out local zones, which are not currently supported 
