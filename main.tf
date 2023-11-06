@@ -3,6 +3,7 @@
 
 provider "aws" {
   region = var.region
+  alias  = "us_east_1"
 }
 
 # Filter out local zones, which are not currently supported 
@@ -13,8 +14,6 @@ data "aws_availability_zones" "available" {
     values = ["opt-in-not-required"]
   }
 }
-
-
 
 resource "random_string" "suffix" {
   length  = 8
