@@ -3,7 +3,7 @@
 
 provider "aws" {
   region = "us-east-1"
-  alias  = "east"
+  alias  = "us_east_1"
 }
 
 # Filter out local zones, which are not currently supported 
